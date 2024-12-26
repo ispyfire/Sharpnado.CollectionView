@@ -16,13 +16,13 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-
+<!--
             <Style x:Key="SegmentedTabStyle" TargetType="sho:UnderlinedTabItem">
                 <Setter Property="SelectedTabColor" Value="{StaticResource Accent}" />
                 <Setter Property="LabelSize" Value="16" />
                 <Setter Property="UnderlineHeight" Value="0" />
                 <Setter Property="UnselectedLabelColor" Value="{StaticResource TextSecondaryDarkColor}" />
-            </Style>
+            </Style>-->
 
             <DataTemplate x:Key="GridDudeTemplate">
                 <sho:DraggableViewCell x:Name="DraggableViewCell">
@@ -239,7 +239,7 @@
 
                 </Grid>
 
-
+<!--
                 <sho:TabHostView
                     x:Name="TabHost"
                     WidthRequest="280"
@@ -265,7 +265,7 @@
                         <sho:UnderlinedTabItem Style="{StaticResource SegmentedTabStyle}" Label="Horizontal" />
                         <sho:UnderlinedTabItem Style="{StaticResource SegmentedTabStyle}" Label="Vertical" />
                     </sho:TabHostView.Tabs>
-                </sho:TabHostView>
+                </sho:TabHostView> -->
             </VerticalStackLayout>
 
         </Grid>

@@ -1,5 +1,5 @@
 ﻿using Sharpnado.CollectionView;
-using Sharpnado.Tabs;
+//using Sharpnado.Tabs;
 
 namespace MauiSample;
 
@@ -10,7 +10,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseSharpnadoTabs(loggerEnable: false)
+			//.UseSharpnadoTabs(loggerEnable: false)
 			.UseSharpnadoCollectionView(loggerEnable: true, debugLogEnable: false)
 			.ConfigureFonts(fonts =>
 			{
