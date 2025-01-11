@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0;net7.0-ios;net7.0-android</TargetFrameworks>
+		<TargetFrameworks>net9.0;net9.0-ios;net9.0-android</TargetFrameworks>
 
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
@@ -116,11 +116,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\..\Docs\logo_maui.png" Pack="true" PackagePath="\images\" />
-		<None Include="ReadMe.md" Pack="true" PackagePath="\docs\" />
+		<None Include="..\..\Docs\logo_maui.png" Pack="true" PackagePath="images/" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="ReadMe.md" Pack="true" PackagePath="docs/" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.0" />
 		<PackageReference Include="Sharpnado.TaskMonitor" Version="1.0.2" />
 		<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.354">
 			<PrivateAssets>all</PrivateAssets>
